@@ -42,6 +42,9 @@
 #include "error.h"
 #include "progressbar.h"
 #include "caches-queues-lists.h"
+#include "macosx.h"
+
+#ifndef SQUASHFS_DISABLE_INFO
 
 static int silent = 0;
 static struct dir_ent *ent = NULL;
@@ -176,3 +179,5 @@ void init_info()
 {
 	pthread_create(&info_thread, NULL, info_thrd, NULL);
 }
+
+#endif

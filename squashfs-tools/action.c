@@ -43,6 +43,7 @@
 #include "mksquashfs.h"
 #include "action.h"
 #include "error.h"
+#include "macosx.h"
 
 /*
  * code to parse actions

@@ -76,6 +76,7 @@
 #include "read_fs.h"
 #include "restore.h"
 #include "process_fragments.h"
+#include "macosx.h"
 
 int delete = FALSE;
 int fd;

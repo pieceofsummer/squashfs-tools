@@ -30,8 +30,13 @@
 #include "xattr.h"
 #include "unsquashfs_info.h"
 #include "stdarg.h"
+#include "macosx.h"
 
+#ifdef __MACH__
+#include <sys/sysctl.h>
+#else
 #include <sys/sysinfo.h>
+#endif
 #include <sys/types.h>
 #include <sys/time.h>
 #include <sys/resource.h>

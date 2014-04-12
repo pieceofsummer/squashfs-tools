@@ -40,6 +40,9 @@
 #include "squashfs_fs.h"
 #include "unsquashfs.h"
 #include "error.h"
+#include "macosx.h"
+
+#ifndef SQUASHFS_DISABLE_INFO
 
 static int silent = 0;
 char *pathname = NULL;
@@ -143,3 +146,5 @@ void init_info()
 {
 	pthread_create(&info_thread, NULL, info_thrd, NULL);
 }
+
+#endif

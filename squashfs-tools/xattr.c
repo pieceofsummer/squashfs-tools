@@ -42,6 +42,7 @@
 #include "xattr.h"
 #include "error.h"
 #include "progressbar.h"
+#include "macosx.h"
 
 /* compressed xattr table */
 static char *xattr_table = NULL;

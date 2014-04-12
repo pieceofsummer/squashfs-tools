@@ -42,6 +42,7 @@
 #include "error.h"
 #include "progressbar.h"
 #include "info.h"
+#include "macosx.h"
 
 #define FALSE 0
 #define TRUE 1

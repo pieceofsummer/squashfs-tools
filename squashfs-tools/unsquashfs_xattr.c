@@ -24,6 +24,7 @@
 
 #include "unsquashfs.h"
 #include "xattr.h"
+#include "macosx.h"
 
 #include <sys/xattr.h>
 
