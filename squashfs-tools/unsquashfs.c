@@ -2098,7 +2098,7 @@ void *writer(void *arg)
  */
 void *inflator(void *arg)
 {
-	char tmp[block_size];
+	char *tmp = (char*)malloc(block_size);
 
 	while(1) {
 		struct cache_entry *entry = queue_get(to_inflate);
@@ -2121,6 +2121,8 @@ void *inflator(void *arg)
  		 */ 
 		cache_block_ready(entry, res == -1);
 	}
+	
+	free(tmp);
 }
 
 
